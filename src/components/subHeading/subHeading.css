@@ -1,0 +1,34 @@
+.myportfolio__subtitle{
+    color: #fff;
+    padding-top: 20px;
+}
+
+.myportfolio__subtitle h1{
+    color:black;
+    font-size: 35px;
+    position: relative;
+
+}
+
+.myportfolio__subtitle h1::after {
+    content: '';
+    width: 150px;
+    height: 2.5px;
+    background: var(--color-red);
+    position: absolute;
+    top: 55%;
+    left: '';
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+
+@media screen and (max-width: 550px){
+    .myportfolio__subtitle {
+        color: #fff;
+        padding-top: 10px;
+    }
+    .myportfolio__subtitle h1::after{
+        width: 100px;
+    }
+}

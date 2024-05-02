@@ -1,0 +1,52 @@
+.myportfolio__navbar{
+    width: 420px;
+    background-color: #fff;
+    padding: .5rem .6rem;
+    border-radius: .5rem;
+}
+
+.myportfolio__navbar-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.myportfolio__navbar-links li {
+    background-color: var(--color-grey);
+    padding: 6px 17px;
+    border-radius: .5rem;
+}
+.myportfolio__navbar-links li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    font-size: 15px;
+
+}
+
+.myportfolio__navbar-links li:hover{
+    background: var(--color-red);
+    color: white;
+}
+
+.myportfolio__navbar-links li a svg {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.myportfolio__navbar-links .active{
+    background: var(--color-red);
+    color: #fff;
+}
+
+@media screen and (max-width:1150px) {
+    .myportfolio__navbar{
+        display: none;
+    }
+}

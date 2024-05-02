@@ -1,0 +1,73 @@
+.myportfolio__card{
+    width: 100%;
+    min-width: 320px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.myportfolio__card-container{
+    width: 48%;
+    background-color: var(--prink);
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.myportfolio__card-icon{
+    color: rgb(219, 7, 219);
+   padding: 4px 8px;
+    
+}
+
+.myportfolio__card-icon svg {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.myportfolio__card-content{
+    width: 100%;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.myportfolio__card_content-heading {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.myportfolio__card_content-heading h3{
+    font-size: 17.5px;
+    font-family: var(--font-alt);
+    line-height: 25px;
+}
+
+.myportfolio__card_content-desc{
+    width: 100%;
+    text-align: left;
+    margin-top: .7rem;
+}
+
+.myportfolio__card_content-desc p{
+    line-height: 24px;
+}
+.myportfolio__card .myportfolio__card-container:nth-child(2) {
+    background-color: var(--catkrill);
+}
+.myportfolio__card .myportfolio__card-container:nth-child(3) {
+    background-color: var(--catkrill);
+}
+
+@media screen and (max-width: 780px) {
+    .myportfolio__card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .myportfolio__card-container {
+        width: 100%;
+        padding:10px 15px 10px 10px;
+    }
+}

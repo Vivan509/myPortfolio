@@ -1,0 +1,223 @@
+.myportfolio__contactpage{
+    background: var(--color-white);
+    border-radius: .5rem;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 3rem;
+}
+
+.myportfolio__contactpage-title{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.myportfolio__contactpage form {
+    background-color: var(--light-white-2);
+    border-radius: 1rem;
+    padding: 60px 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.myportfolio__contactpage-form_subtitle{
+    width: 100%;
+}
+
+.myportfolio__contactpage-form_subtitle p:first-child{
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--body-text);
+        text-transform: capitalize;
+        margin-bottom: 13px;
+}
+.myportfolio__contactpage-form_subtitle p:nth-child(2){
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: lowercase;
+        margin-bottom: 45px;
+}
+
+.myportfolio__contactpage-form_input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+}
+
+.myportfolio__contactpage-form_input-name,
+.myportfolio__contactpage-form_input-email,
+.myportfolio__contactpage-form_input-message{
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.myportfolio__contactpage-form_input-name input,
+.myportfolio__contactpage-form_input-email input,
+.myportfolio__contactpage-form_input-message textarea{
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid #838383c6;
+    margin: 1rem 0;
+    background: transparent;
+}
+
+.myportfolio__contactpage-form_input-message textarea{
+    resize: vertical;
+    transition: 0.3s linear;
+}
+
+.myportfolio__contactpage-form_input-name label,
+.myportfolio__contactpage-form_input-email label,
+.myportfolio__contactpage-form_input-message label{
+  color: #44566C;;
+  position: absolute;
+  left: 0;
+  bottom: 24px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-size: 20px;
+}
+
+.myportfolio__contactpage-form_input-name input:focus,
+.myportfolio__contactpage-form_input-email input:focus,
+.myportfolio__contactpage-form_input-message textarea:focus{
+    outline: none;
+}
+
+.myportfolio__contactpage-form_input-name input:focus ~ label{
+    transform: translateY(-20px);
+    color: rgb(254, 120, 120);
+    font-size: 18px;
+
+}
+
+.myportfolio__contactpage-form_input-email input:focus ~ label{
+    transform: translateY(-20px);
+    color: rgb(27, 116, 228);
+    font-size: 18px;
+
+}
+
+.myportfolio__contactpage-form_input-message textarea:focus ~ label{
+    transform: translateY(-20px);
+    color: rgb(206, 101, 243);
+    font-size: 18px;
+
+}
+.myportfolio__contactpage-form_input-name .underline-name,
+.myportfolio__contactpage-form_input-email .underline-email {
+    position: absolute;
+    bottom: 16px;
+    height: 2px;
+    width: 100%;
+}
+
+.myportfolio__contactpage-form_input-message .underline-message{
+    position: absolute;
+    bottom: 20px;
+    height: 2px;
+    width: 100%;
+}
+
+.underline-name::before,
+.underline-before::before,
+.underline-message::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transition:  0.3s linear ease;
+}
+.myportfolio__contactpage-form_input-name input:focus ~ .underline-name::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    transform: scaleX(1);
+    background: rgb(254, 120, 120);
+}
+.myportfolio__contactpage-form_input-email input:focus ~ .underline-email::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    transform: scaleX(1);
+    background:  rgb(27, 116, 228);
+}
+.myportfolio__contactpage-form_input-message textarea:focus ~ .underline-message::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    transform: scaleX(1);
+    background:  rgb(206, 101, 243);
+}
+
+.myportfolio__contactpage-form_input-button{
+    width: 100%;
+    
+}
+
+.myportfolio__contactpage-form_input-button button{
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #1a1a1a;
+    height: 50px;
+    width: 133px;
+    border: 1px solid #44566c;
+    border-radius: 12px;
+    background-color: var(--light-white-2);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.myportfolio__contactpage-form_input-button button:hover {
+    color: #fff;
+    background: var(--color-red);
+    border: none;
+}
+
+
+@media screen and (max-width: 800px ) {
+    .myportfolio__contactpage{
+        padding: 0;
+    }
+    .myportfolio__contactpage-title{
+        padding: 1.5rem 3rem 0 2rem;
+    }
+    .myportfolio__contactpage form {
+        padding: 60px 25px;
+        width: 95%;
+    }
+    .myportfolio__contactpage-form_subtitle p:first-child{
+        font-size: 23px;
+        
+    }
+    .myportfolio__contactpage-form_subtitle p:nth-child(2){
+        font-size: 22px;
+        margin-bottom: 35px;
+            
+    }
+    .myportfolio__contactpage-form_input-name label,
+    .myportfolio__contactpage-form_input-email label,
+    .myportfolio__contactpage-form_input-message label{
+        font-size: 18px;
+    }
+    .myportfolio__contactpage-form_input-name input:focus ~ label,
+    .myportfolio__contactpage-form_input-email input:focus ~ label,
+    .myportfolio__contactpage-form_input-message textarea:focus ~ label{
+        font-size: 16.5px;
+    }
+
+    .myportfolio__contactpage-form_input-button button{
+        height: 45px;
+        width: 120px;  
+    }
+}

@@ -1,0 +1,214 @@
+.myportfolio__resume{
+    background: var(--color-white);
+    margin-top: 3rem;
+    border-radius: .5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.myportfolio__resume_heading{
+    padding: 1.5rem 3rem 2rem 3rem;
+}
+
+.myportfolio__resume-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.myportfolio__resume-content-education,
+.myportfolio__resume-content-experience,
+.myportfolio__resume-content-skill,
+.myportfolio__resume-content-knowledge{
+    width: 50%;
+}
+
+.myportfolio__resume-content_title h2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+}
+
+.myportfolio__resume-content_title h2 svg{
+    font-size: 28px;
+    color: #fa5252;
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+.myportfolio__resume-content_title h2 span{
+    font-size: 28px;
+    letter-spacing: 0.04em;
+}
+
+
+.myportfolio__resume-content_card-container{
+    margin-top: 1.2rem;
+    width: 100%;
+}
+
+.myportfolio__resume-content_card{
+    padding: 15px;
+    background: var( --prink);
+    border-radius: 10px;
+}
+
+.myportfolio__resume-content_card-subtitle{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 9px;
+    letter-spacing: 0.04em;
+}
+
+.myportfolio__resume-content_card-title h6{
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--heading-black);
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+}
+
+.myportfolio__resume-content_card-title h6 span {
+    font-size: 19px;
+    color: var(--body-text);
+    letter-spacing: 0.04em;
+}
+
+.myportfolio__resume-content_card-desc{
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    color: var(--body-text);
+}
+
+.college-container{
+    background-color: var(--catkrill);
+}
+
+.working-container{
+    margin: 2.5rem 0;
+    padding: 70px 60px 60px 60px;
+    background-color: var(--light-white-2);
+    border-bottom: 1px solid var(--color-grey);
+}
+.myportfolio__resume-content_skill-component,
+.myportfolio__resume-content_knowledge-component{
+    margin-top: 1rem;
+    padding: 0 0;
+}
+
+.myportfolio__resume-content_knowledge-component{
+    width: 100%;
+}
+
+
+.myportfolio__resume-content_skill-component-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myportfolio__resume-content_skill-component-cont-subtitle p{
+    font-size: 16px;
+    
+}
+
+
+.myportfolio__resume-content_knowledge-component_tags p{
+
+    padding: 3px 10px;
+    display: inline-flex;
+    margin: 0 8px 8px 0;
+    background: var(--color-grey);
+    border-radius: 10px;
+}
+.myportfolio__resume-content_skill-component-cont-bar{
+    content: '';
+    width: 100%;
+    height: 4.5px;
+    background: var(--color-gray);
+    margin-top: 12px;
+    border-radius: 20px;
+}
+
+.myportfolio__resume-content_skill-component-cont-bar_progess{
+    content: '';
+    width: 85%;
+    height: 4.5px;
+    background-color: #ff6464;
+    border-radius: 20px;
+}
+
+.two-progessbar{
+    width: 95%;
+    background-color: #e34c26;
+}
+.three-progessbar{
+    width: 90%;
+    background-color: #264de4;
+}
+
+.fourth-progessbar{
+    width: 85%;
+    background-color: #e8fe25;
+}
+
+.fifth-progessbar{
+    width: 80%;
+    background-color:  #61dbfb;
+}
+
+@media screen and (max-width: 780px) {
+    .myportfolio__resume-content{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .myportfolio__resume-content-education, 
+    .myportfolio__resume-content-experience, 
+    .myportfolio__resume-content-skill, 
+    .myportfolio__resume-content-knowledge {
+        width: 100%;
+    }
+    .myportfolio__resume_heading{
+        padding-left: 2rem;
+    }
+    .myportfolio__resume-content_skill-component, .myportfolio__resume-content_knowledge-component {
+        margin-top: 1rem;
+         padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .myportfolio__resume-content_title h2 svg{
+        font-size: 25px;
+       
+    }
+    .myportfolio__resume-content_title h2 span{
+        font-size: 25px;
+        letter-spacing: 0.04em;
+    }
+
+    .myportfolio__resume-content_card-title h6{
+        font-size: 19px;
+    }
+    
+    .myportfolio__resume-content_card-title h6 span {
+        font-size: 17px;
+    }
+    
+    .myportfolio__resume-content_card-desc{
+        font-size: 16px;
+        
+    }
+}

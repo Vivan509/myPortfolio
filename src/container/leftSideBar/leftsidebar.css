@@ -1,0 +1,189 @@
+.portfolio__leftsidebar{
+    min-width: 380px; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    margin: 4.8rem 2rem 0 0;
+}
+
+.portfolio__leftsidebar-container {
+    height: 85vh;
+    margin-left: 4rem;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--light-white);
+    border-radius: 10px;
+    position: relative;
+    padding: 5px 12px;
+}
+
+.portfolio__leftsidebar-container_img{
+    width: 170px;
+    height: 150px;
+    position: absolute;
+    top: -95px;
+}
+
+.portfolio__leftsidebar-container_img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio__leftsidebar-container_content{
+   width: 100%;
+   text-align: center;
+
+}
+.portfolio__leftsidebar-container_content h1{
+    margin-top: 4.8rem;
+    line-height: 40px;
+    font-size: 26px;
+}
+.portfolio__leftsidebar-container_content-tag{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--color-grey);
+}
+.portfolio__leftsidebar-container_content-tag p{
+    line-height: 20px;
+}
+
+.portfolio__leftsidebar-container_icons{
+    margin-top: .9rem;
+    text-align: center;
+
+}
+.portfolio__leftsidebar-container_icons a{
+    cursor: pointer;
+    margin-right: 1.3rem;
+}
+
+.portfolio__leftsidebar-container_icons a .icons{
+    font-size: 35px;
+    padding: 6px 5px;
+    border-radius: 4px;
+    background: var(--color-grey);
+}
+.portfolio__leftsidebar-container_icons a:nth-child(1){
+    color:#1877F2
+}
+.portfolio__leftsidebar-container_icons a:nth-child(2){
+    color: rgb(228, 64, 95);
+}
+.portfolio__leftsidebar-container_icons a:nth-child(3){
+    color: #25D366;
+}
+.portfolio__leftsidebar-container_icons a:nth-child(4){
+    color: #2b3137;
+}
+
+.portfolio__leftsidebar-container_icons a .icons:hover{
+    background-color: rgb(248, 93, 93);
+    color: white;
+}
+
+.portfolio__leftsidebar-container button{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: 0.5s ease;
+    margin-top: .8rem;
+}
+.portfolio__leftsidebar-container button:hover{
+    background: var(--color-grey);
+    color:rgb(248, 93, 93);
+    border: 1px solid rgb(248, 93, 93);
+}
+.portfolio__leftsidebar-container button svg{
+    font-size: 19px;
+    margin-right: .5rem;
+}
+.portfolio__leftsidebar-container button span{
+    font-size: 17.5px;
+}
+@media screen and (max-width: 1400px) {
+    
+    .portfolio__leftsidebar-container{
+        margin: 0 0 0 2rem;
+    }
+    .portfolio__leftsidebar {
+        margin: 4.3rem 2rem 0 0;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .portfolio__leftsidebar{
+        position: static;
+        margin: 3rem 4rem;
+        
+    }
+    .portfolio__leftsidebar-container{
+        margin: 0;
+        height: 100%;
+    }
+
+    .portfolio__leftsidebar-container_img{
+        width: 170px;
+        position: static;
+        margin-top: .8rem;
+    }
+
+    .portfolio__leftsidebar-container_content h1 {
+        font-size: 28px;
+        margin-top: 2.7rem;
+        margin-bottom: 25px;
+        line-height: 0;
+    }
+
+    .portfolio__leftsidebar-container_content-tag{
+        padding: 7px 12px;
+        text-align: center;
+        margin: 0rem 0;
+        background-color: var(--color-grey);
+    }
+    .portfolio__leftsidebar-container_content-tag p{
+        font-size: 15px;
+    }
+
+    .portfolio__leftsidebar-container_icons a .icons{
+        font-size: 30px;
+        padding: 4px 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .portfolio__leftsidebar-container button{
+        margin-top: 19px;
+        padding: 8px 35px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .portfolio__leftsidebar{
+        margin: 3rem 1rem;
+    }
+    .portfolio__leftsidebar-container_img{
+        width: 155px;
+        margin-top: 10px;
+    }
+
+    .portfolio__leftsidebar-container_content h1 {
+        font-size: 25px;
+        margin-top: 1.4rem;
+        margin-bottom: 22px;
+        line-height: 0;
+    }
+    .portfolio__leftsidebar-container button{
+        margin-top: 4px;
+        padding: 8px 35px;
+    }
+}
+
